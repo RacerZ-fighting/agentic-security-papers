@@ -7,7 +7,7 @@
 本仓库整理自以下材料，快照日期为 **2026-10-12**：
 
 - [SoK 修改对话](https://chatgpt.com/share/6acca420-93d0-83e9-9b15-4ac78ad3bbdd)：用于确定最终文章结构、七类安全任务和五项技术设计。
-- 对话附件 **Agentic_System_安全研究_SoK_终稿.md**：以 [sok.md](sok.md) 为基础稿，在原文第 2、3 节补充了文献分布统计、表格与图示。原始导入版本保留在 Git 历史中。
+- 对话附件 **Agentic_System_安全研究_SoK_终稿.md**：作为 [sok.md](sok.md) 的基础稿。仓库版本在第 2、3 节补充文献分布统计、表格与图示，并按现有技术的具体不足修订第 3 节小结与第 5 节贡献总结。原始导入版本保留在 Git 历史中。
 - [Agentic Security 文献映射与证据附表](https://chatgpt.com/space/page_6036c46b131481919853c86313b89f9d)：已保存为 [source-corpus.md](source-corpus.md)，保留全部 85 条记录和未纳入候选。原文中的“正文”链接指向早期草稿；仓库分类使用对话终稿。
 
 以上 ChatGPT Page 链接可能需要源账户权限。所有文献记录和 SoK 正文均提供仓库内副本，日常查阅无需访问源 Page。
