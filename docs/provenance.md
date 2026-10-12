@@ -38,6 +38,6 @@
 
 ## 仓库维护
 
-`data/papers.json` 是当前文献和分类的数据来源，`data/taxonomy.json` 定义分类。生成器同步四个阅读入口，避免首页数量、会议统计与逐篇记录发生偏差。原始材料保持为快照；后续修正以当前数据和提交历史为准。
+`data/papers.json` 保存当前文献和分类，`data/taxonomy.json` 定义分类。更新时同步编辑首页、逐篇分析、分类映射和会议索引，保持编号与统计一致。原始材料保持为快照；后续修正以当前数据和提交历史为准。
 
-仓库结构参考 [Awesome manifesto](https://github.com/sindresorhus/awesome/blob/main/awesome.md) 的目录、分组、简短介绍和贡献指南形式。内容许可采用对话建议的 [CC BY 4.0](../LICENSE)；脚本单独采用 [MIT](../scripts/LICENSE)。
+仓库结构参考 [Awesome manifesto](https://github.com/sindresorhus/awesome/blob/main/awesome.md) 的目录、分组、简短介绍和贡献指南形式。内容许可采用对话建议的 [CC BY 4.0](../LICENSE)。

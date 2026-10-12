@@ -16,14 +16,10 @@
 2. 编辑 `data/papers.json`。新增条目使用下一个稳定编号，如 `P086`；保留已有编号。
 3. 依据 `data/taxonomy.json` 选择一个主分类，补充 `related_tasks` 和 `designs`。跨任务标签可以多选，不重复收录同一论文。
 4. 填写 `title`、`short_name`、`year`、`venue`、`role`、`url`、`acceptance_label`、`acceptance_url`、`acceptance_status`、`bottleneck`、`mechanism` 和 `limitations`。未知信息应核实后再填写，不推测作者、DOI 或代码仓库。
-5. 运行下列命令，并把生成的 Markdown 一起提交：
+5. 同步更新 README、`docs/evidence.md`、`docs/mapping.md` 和 `docs/venues.md` 中的对应条目、分类计数和会议统计。
+6. 检查论文是否重复、链接是否正确，以及各处的编号、分类和数量是否一致。
 
-```sh
-python3 scripts/build.py
-python3 scripts/build.py --check
-```
-
-脚本只使用 Python 标准库。README、逐篇分析、映射表和会议索引均由数据生成；介绍或排版需要调整时，修改 `scripts/build.py` 中对应模板。
+直接编辑 Markdown 和 JSON 文件即可完成维护。
 
 ## 分类与证据
 
@@ -33,8 +29,8 @@ python3 scripts/build.py --check
 - D1–D5 对应 SoK §3.1–§3.5。不要仅因论文使用 LLM、包含多个 Agent 或运行过测试，就推断其具有自主规划或独立验证能力。
 - 对编译成功、代码覆盖、漏洞触发、安全影响和补丁正确性分别表述；统计结果注明样本与预算边界。
 
-修正现有条目时，在 PR 中附来源并解释变化。`docs/source-corpus.md` 是最初 85 篇的来源快照，保持原样；后续修订在当前数据及 Git 历史中记录。若研究范围确需删除旧条目，应同时调整保留原始 ID 的校验规则，并说明原因。
+修正现有条目时，在 PR 中附来源并解释变化。`docs/source-corpus.md` 是最初 85 篇的来源快照，保持原样；后续修订在当前数据及 Git 历史中记录。若研究范围确需删除旧条目，应同步更新各处索引和统计，说明原因，并保留其编号不再复用。
 
 ## 许可证
 
-文献整理与原创说明采用 [CC BY 4.0](LICENSE)，构建脚本采用 [MIT](scripts/LICENSE)。请提供论文和代码的官方或作者链接；第三方全文仍遵循其原有许可。
+文献整理与原创说明采用 [CC BY 4.0](LICENSE)。请提供论文和代码的官方或作者链接；第三方全文仍遵循其原有许可。
