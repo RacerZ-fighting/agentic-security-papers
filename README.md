@@ -2,9 +2,9 @@
 
 > A curated list of research papers on agentic systems for security.
 
-收录 **85 篇**安全四大会议相关论文，按安全任务分类，与 [SoK 文章](docs/sok.md)的结构对应。覆盖 2025–2026 年及已确认录用的 2027 年工作，更新于 **2026-10-12**。
+**85 篇论文** · **2025–2027** · 更新于 **2026-10-12**
 
-[技术分类](docs/mapping.md) · [阅读笔记](docs/evidence.md) · [会议索引](docs/venues.md)
+[SoK 文章](docs/sok.md) · [技术分类](docs/mapping.md) · [阅读笔记](docs/evidence.md) · [会议索引](docs/venues.md)
 
 ## 目录
 
@@ -21,8 +21,6 @@
 <a id="analysis"></a>
 
 ## 程序安全分析与漏洞检测
-
-源码、二进制、访问控制、API 误用及静态分析规则。
 
 - **[Automatically Learning Vulnerability Patterns for Scalable Static Analysis of Web Applications](https://peng-hui.github.io/data/paper/ccs26:mocq.pdf)**（MoCQ） · CCS 2026
   以受限查询语言、符号语义反馈、规则泛化和误报消除构成固定生成执行循环。
@@ -72,8 +70,6 @@
 <a id="testing"></a>
 
 ## 动态安全测试
-
-模糊测试、符号执行、Web 扫描、协议与固件测试，以及测试环境和 Harness 准备。
 
 - **[Agentic Orchestration for Hybrid Fuzzing](https://abhikrc.com/pdf/NDSS27.pdf)**（AhFuzz） · NDSS 2027（已录用）
   代理维护覆盖、种子和目标—结果轨迹，主动选择并配置 AFL++ 与 ConcoLLMic，让两类测试器协作探索。
@@ -175,8 +171,6 @@
 
 ## 漏洞复现与利用验证
 
-从已知漏洞或给定安全目标出发，生成并验证 PoC、PoV 或攻击见证。
-
 - **[SelfOp: An Optimization Algorithm for Self-Improving Security Agents](https://arxiv.org/pdf/2609.22792)** · IEEE S&P 2027（已录用）
   把失败结果沿执行轨迹归因到技能文档，汇总跨任务一致的修改意见，在冻结模型和执行框架的情况下优化上下文。
 
@@ -199,8 +193,6 @@
 
 ## 安全规约生成与形式化验证
 
-安全性质、协议规约、验证环境与组件级证明的生成和检查。
-
 - **[AutoSOUP: Safety-Oriented Unit Proof Generation for Component-level Memory-Safety Verification](https://arxiv.org/pdf/2605.10712)** · CCS 2026
   资源感知范围扩展、性质引导循环界精化、调用上下文检验环境前提；LLM处理有界语义任务，CBMC与静态分析验证产物。
 
@@ -213,8 +205,6 @@
 <a id="repair"></a>
 
 ## 自动化漏洞修复
-
-根因定位、补丁生成、回移与补丁完整性检查。
 
 - **[From Fix to Flaw: Understanding and Revealing Incomplete Patches for Link Following Vulnerabilities](https://crisprss.github.io/paper/linkdiff.pdf)**（LinkDiff） · CCS 2026
   先静态裁剪文件操作相关差异，再让模型按需调用二进制分析工具，并以历史补丁缺陷分类辅助审计。
@@ -241,8 +231,6 @@
 
 ## 自动化渗透测试
 
-CTF、权限提升与多主机攻击任务中的状态维护和操作选择。
-
 - **[Incalmo: an Autonomous Llm-Assisted System for Red Teaming Multi-Host Networks](https://arxiv.org/pdf/2501.16466)** · IEEE S&P 2026
   将高层规划与五类任务执行分离，用任务代理和持久化环境状态服务协同推进。
 
@@ -255,8 +243,6 @@ CTF、权限提升与多主机攻击任务中的状态维护和操作选择。
 <a id="operations"></a>
 
 ## 安全事件调查与运维处置
-
-日志调查、威胁检测与模拟、响应规划及受运行策略约束的漏洞处置。
 
 - **[Chimera: Harnessing Multi-Agent LLMs for Automatic Insider Threat Simulation](https://www.ndss-symposium.org/wp-content/uploads/2026-f375-paper.pdf)** · NDSS 2026
   有角色、记忆、计划和交流能力的多代理在隔离企业环境执行活动，生成用于检测评估的多模态日志。
@@ -286,8 +272,6 @@ CTF、权限提升与多主机攻击任务中的状态维护和操作选择。
 
 ## 相邻主题
 
-安全代码生成、验证码、MCP 工具审计、诈骗测量、硬件 IP、汽车风险建模与隐私合规。
-
 - **[Automating Function-Level TARA for Automotive Full-Lifecycle Security](https://www.ndss-symposium.org/wp-content/uploads/2026-s1408-paper.pdf)** · NDSS 2026
   构造子树、组装攻击树和风险评估的专职代理互相检查，以结构化配置、RAG 和微调支持功能级 TARA。
 
@@ -313,8 +297,6 @@ CTF、权限提升与多主机攻击任务中的状态维护和操作选择。
 
 ## 评测与方法背景
 
-反混淆基准、函数语义恢复、对抗评测与 AIxCC SoK。
-
 - **[Hieronym: Leveraging Hierarchical Multi-Source Information for Function Renaming in Stripped Binary](https://arxiv.org/pdf/2609.12457)** · CCS 2026
   通过分层摘要训练结合全局字符串与局部调用信息预测函数名。
 
@@ -327,10 +309,6 @@ CTF、权限提升与多主机攻击任务中的状态维护和操作选择。
 - **[JsDeObsBench: Measuring and Benchmarking LLMs for JavaScript Deobfuscation](https://arxiv.org/pdf/2506.20170)** · CCS 2025
   构造可执行混淆样本，以单示例提示调用模型，并用语法、执行、复杂度与代码相似度四类评估器验证输出。
 
-## Contributing
+---
 
-欢迎补充论文、修正分类和报告链接问题，详见[贡献指南](CONTRIBUTING.md)。
-
-## License
-
-文献整理、分类与原创说明采用 [CC BY 4.0](LICENSE)。被引用论文与第三方材料保留各自的版权和许可证。
+[贡献指南](CONTRIBUTING.md) · [CC BY 4.0](LICENSE)
