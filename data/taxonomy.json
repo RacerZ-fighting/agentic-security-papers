@@ -1,0 +1,109 @@
+{
+  "categories": [
+    {
+      "id": "analysis",
+      "name": "程序安全分析与漏洞检测",
+      "english": "Program Analysis and Vulnerability Detection",
+      "description": "源码、二进制、访问控制、API 误用及静态分析规则。",
+      "sok_section": "2"
+    },
+    {
+      "id": "testing",
+      "name": "动态安全测试",
+      "english": "Dynamic Security Testing",
+      "description": "模糊测试、符号执行、Web 扫描、协议与固件测试，以及测试环境和 Harness 准备。",
+      "sok_section": "2"
+    },
+    {
+      "id": "reproduction",
+      "name": "漏洞复现与利用验证",
+      "english": "Vulnerability Reproduction and Exploit Validation",
+      "description": "从已知漏洞或给定安全目标出发，生成并验证 PoC、PoV 或攻击见证。",
+      "sok_section": "2"
+    },
+    {
+      "id": "verification",
+      "name": "安全规约生成与形式化验证",
+      "english": "Security Specification and Formal Verification",
+      "description": "安全性质、协议规约、验证环境与组件级证明的生成和检查。",
+      "sok_section": "2"
+    },
+    {
+      "id": "repair",
+      "name": "自动化漏洞修复",
+      "english": "Automated Vulnerability Repair",
+      "description": "根因定位、补丁生成、回移与补丁完整性检查。",
+      "sok_section": "2"
+    },
+    {
+      "id": "pentesting",
+      "name": "自动化渗透测试",
+      "english": "Automated Penetration Testing",
+      "description": "CTF、权限提升与多主机攻击任务中的状态维护和操作选择。",
+      "sok_section": "2"
+    },
+    {
+      "id": "operations",
+      "name": "安全事件调查与运维处置",
+      "english": "Security Investigation and Operational Remediation",
+      "description": "日志调查、威胁检测与模拟、响应规划及受运行策略约束的漏洞处置。",
+      "sok_section": "2"
+    },
+    {
+      "id": "adjacent",
+      "name": "相邻主题",
+      "english": "Related Topics",
+      "description": "安全代码生成、验证码、MCP 工具审计、诈骗测量、硬件 IP、汽车风险建模与隐私合规。",
+      "sok_section": null
+    },
+    {
+      "id": "background",
+      "name": "评测与方法背景",
+      "english": "Benchmarks and Methodological Background",
+      "description": "反混淆基准、函数语义恢复、对抗评测与 AIxCC SoK。",
+      "sok_section": "4"
+    }
+  ],
+  "designs": [
+    {
+      "id": "D1",
+      "name": "安全规则与规约的自动推断",
+      "english": "Security Rule and Specification Inference",
+      "sok_section": "3.1",
+      "description": "从代码、文档或历史样例生成可供安全工具使用的规则、查询、约束或规约。"
+    },
+    {
+      "id": "D2",
+      "name": "执行环境与前置状态的自动准备",
+      "english": "Environment and State Preparation",
+      "sok_section": "3.2",
+      "description": "准备软件依赖、验证环境、设备环境或多步交互所需的状态。"
+    },
+    {
+      "id": "D3",
+      "name": "基于程序语义的测试输入生成",
+      "english": "Semantics-Guided Test Generation",
+      "sok_section": "3.3",
+      "description": "生成 Harness、输入生成器、变异器或满足语义约束的测试输入。"
+    },
+    {
+      "id": "D4",
+      "name": "基于执行反馈的任务规划与调整",
+      "english": "Feedback-Guided Planning and Execution",
+      "sok_section": "3.4",
+      "description": "按需获取证据，结合执行轨迹调整步骤、修复产物或维护任务状态；发生阶段须结合逐篇机制阅读。"
+    },
+    {
+      "id": "D5",
+      "name": "基于外部工具的结果验证",
+      "english": "Tool-Based Validation",
+      "sok_section": "3.5",
+      "description": "利用编译、运行、测试、形式化工具或原始事件证据检查产物；检查强度因任务而异。"
+    }
+  ],
+  "roles": [
+    "研究系统与反馈流程",
+    "边界对照",
+    "评测与方法背景"
+  ]
+}
