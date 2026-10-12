@@ -16,7 +16,7 @@
 2. 编辑 `data/papers.json`。新增条目使用下一个稳定编号，如 `P086`；保留已有编号。
 3. 依据 `data/taxonomy.json` 选择一个主分类，补充 `related_tasks` 和 `designs`。跨任务标签可以多选，不重复收录同一论文。
 4. 填写 `title`、`short_name`、`year`、`venue`、`role`、`url`、`acceptance_label`、`acceptance_url`、`acceptance_status`、`bottleneck`、`mechanism` 和 `limitations`。未知信息应核实后再填写，不推测作者、DOI 或代码仓库。
-5. 同步更新 README、`docs/evidence.md`、`docs/mapping.md` 和 `docs/venues.md` 中的对应条目、分类计数和会议统计。
+5. 同步更新 README、`docs/evidence.md`、`docs/mapping.md` 和 `docs/venues.md` 中的对应条目、分类计数和会议统计；文献数量或标签变化时，一并更新 `docs/sok.md` 的占比统计与 `docs/figures/` 中的图表。
 6. 检查论文是否重复、链接是否正确，以及各处的编号、分类和数量是否一致。
 
 直接编辑 Markdown 和 JSON 文件即可完成维护。
